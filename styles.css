@@ -1,0 +1,175 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(/Assets/fonts/montserrat-font/MontserratAlternates-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url(/Assets/fonts/fraunces-font/frauncessoftwonkopszwght.woff2) format('woff2');
+}
+
+.attribution {
+    font-size: 0.688rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+.uppercase{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 0.9rem;
+    color: hsl(228,12%, 48%);
+    padding: 3em 0 1.3em 0;
+}
+
+h1{
+    font-family: 'fraunces';
+    line-height: 1em;
+    padding: 0.6em 0;
+}
+
+.description {
+    font-family: 'fraunces';
+    line-height: 1.7em;
+    font-size: 1rem;
+    padding: 1.25em 0;
+    color: hsl(228,12%, 48%);
+}
+
+.current-price {
+    font-family: 'fraunces';
+    font-weight: 700;
+    color: hsl(159, 36%, 37%);
+    font-size: 1.6rem;
+}
+
+/* layout */
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(236, 222, 222); 
+    padding: 1.25em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;   
+}
+
+.img-container, .content-container{
+    width: 320px;
+    max-width: 350px;
+}
+
+#mobile-img {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    padding: 1.25em;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+}
+
+.current-price, .original-price {
+    padding: 0.5625em;
+    margin-bottom: 0.3125em;
+}
+
+.original-price {
+    font-family: 'montserrat';
+    margin-left: 0.125em;
+    color: hsl(228,12%, 48%);
+}
+
+.cart-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'montserrat';
+    padding: 0.9375em;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(159, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    margin-top: 0.3125em;
+}
+
+.cart-btn:active{
+    background-color: hsl(80, 30%, 16%);
+}
+
+.cart-btn:hover{
+    background-color: hsl(80, 30%, 16%);
+}
+
+.btn-img {
+    width: 13px;
+    height: 13px;
+    margin-right: 0.375em;
+}
+
+
+
+/* TODO: work on the mobile design */
+
+/* TODO: Mobile Design */
+
+@media screen and (max-width: 560px) {
+    .desktop-img {
+        display: none;
+    }
+
+    #mobile-img {
+        display: block;
+        /* vertical-align: bottom; */
+    } 
+
+    .container {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content-container, .img-container {
+        width: 375px;
+        max-width: 400px;
+    }
+
+    .uppercase {
+        padding: 0.625em 0 0.625em;
+    }
+
+    h1 ,.description {
+        padding: 0.4375rem 0;
+    }
+
+    .current-price {
+        padding-left: 0px;
+    }
+}
+
+/* continue to fine tune the design */
